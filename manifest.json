@@ -1,0 +1,18 @@
+{
+  "defaults": [
+    ".bash_profile",
+    ".bashrc",
+    ".bashrc.d",
+    ".gitconfig",
+    ".gitignore_global",
+    ".git_template",
+    ".vim",
+    ".vimrc",
+    ".tmux.conf"
+  ],
+
+  "custom": {
+    ".ssh/config": "~/.ssh/config"
+  }
+}
+
