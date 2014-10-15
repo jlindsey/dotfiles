@@ -1,0 +1,62 @@
+[advice]
+  statusHints = false
+[core]
+  excludesfile = ~/.gitignore_global
+  whitespace = -blank-at-eof,tabwidth=2
+  pager = less -S
+[init]
+  templatedir = ~/.git_template
+[user]
+  name = Josh Lindsey
+  email = joshua.s.lindsey@gmail.com
+[alias]
+  co = checkout
+  ci = commit
+  st = status -sb
+  sq = squash
+  gi = "!gi() { curl -s https://www.gitignore.io/api/$@ ;}; gi"
+  cherry-lick = !sh -c 'hub checkout HEAD^{} -- && hub cherry-pick \"$@\"' _
+  ctags = "!sh -c '[ -f .git/hooks/ctags ] || git init; .git/hooks/ctags' git-ctags"
+  one = show -s --pretty='format:%h (%s)'
+  recursive-update = "!sh -c 'find \"${@:-.}\" -type d -name .git -exec dirname {} \\; -exec git --git-dir={} remote update \\;' _"
+  rlog = !sh -c 'git log --color \"$@\"|fmt -s -w 79|less -FRSX' _
+  summary = log --abbrev-commit --pretty=oneline --since=last.mon --reverse
+
+  ls = !git log --oneline --graph --decorate
+  ll = !git log --oneline --graph --decorate --all
+
+  squash = rebase -i --autosquash
+
+[branch]
+  autosetupmerge = always
+  autosetuprebase = always
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[diff "ruby"]
+  funcname = "^ *\\(\\(def\\) .*\\)"
+[diff "image"]
+  textconv = identify
+[help]
+  autocorrect = 10
+[merge]
+  summary = true
+[merge "bundle"]
+  name = bundle
+  driver = bundle
+[merge "railsschema"]
+  name = newer Rails schema version
+  driver = hookup resolve-schema %A %O %B %L
+[pull]
+  rebase = true
+[push]
+  default = tracking
+[rebase]
+  autosquash = true
