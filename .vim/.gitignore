@@ -1,0 +1,9 @@
+backups/*
+doc/
+record/
+spell/
+!.gitkeep
+.netrwhist
+.mkrecord
+install.log
+
