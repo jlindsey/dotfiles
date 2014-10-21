@@ -36,4 +36,5 @@ Plugin 'PotatoesMaster/i3-vim-syntax'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'vim-scripts/dbext.vim'
 Plugin 'rizzatti/dash.vim'
-
+Plugin 'junegunn/vim-pseudocl'
+Plugin 'junegunn/vim-oblique'
