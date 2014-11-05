@@ -1,5 +1,6 @@
 import json
 import os
+import errno
 
 DEFAULT_PATH = os.path.expanduser("~/%s")
 
@@ -14,6 +15,14 @@ def get_local_repo_file_path(filename):
     return os.path.abspath(os.path.realpath(os.path.join('.', filename)))
 
 
+def silent_remove(filename):
+    try:
+        os.remove(filename)
+    except OSError as e:
+        if e.errno != errno.ENOENT:
+            raise
+
+
 def install_file(repo_file, dest_file_path):
     repo_file_path = get_local_repo_file_path(repo_file)
 
@@ -21,10 +30,7 @@ def install_file(repo_file, dest_file_path):
         print "Not linking: File already exists at %s" % dest_file_path
         return
 
-    try:
-        os.remove(dest_file_path)
-    except OSError:
-        pass
+    silent_remove(dest_file_path)
     print "Linking %s -> %s" % (dest_file_path, repo_file_path)
     os.symlink(repo_file_path, dest_file_path)
 
