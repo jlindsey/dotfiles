@@ -8,6 +8,7 @@
     ".git_template",
     ".vim",
     ".vimrc",
+    ".gvimrc",
     ".tmux.conf"
   ],
 
