@@ -21,7 +21,10 @@ def install_file(repo_file, dest_file_path):
         print "Not linking: File already exists at %s" % dest_file_path
         return
 
-    os.remove(dest_file_path)
+    try:
+        os.remove(dest_file_path)
+    except OSError:
+        pass
     print "Linking %s -> %s" % (dest_file_path, repo_file_path)
     os.symlink(repo_file_path, dest_file_path)
 
