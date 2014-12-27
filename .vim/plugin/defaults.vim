@@ -4,7 +4,6 @@ let mapleader = ","
 " General settings
 set nu " Line numbers
 set rnu " Set relative line numbers
-set title " Set window title
 set scrolloff=3 " Keep at least 3 lines visible above + below cursor
 set cursorline " Highlight the current line
 set showmode " Show current file mode
@@ -20,7 +19,6 @@ set grepprg=ack
 
 " Color
 set background=dark
-"let g:base16_shell_path="~/.config/base16-builder/output/shell/"
 colorscheme base16-monokai
 
 " show hidden characters

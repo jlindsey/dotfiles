@@ -50,7 +50,8 @@ endif
 nno [unite] <Nop>
 nmap f [unite]
 
-nno <silent> <C-p> :Unite -buffer-name=files buffer file_rec/async<cr>
+nno <silent> <C-p> :Unite -buffer-name=files file_rec/async<cr>
+nno <silent> [unite]p :<C-u>Unite tag/include<cr>
 nno <silent> [unite]/ :<C-u>Unite grep:.<cr>
 nno <silent> [unite]y :<C-u>Unite history/yank<cr>
 nno <silent> [unite]t :<C-u>UniteTodoAddSimple<cr>
