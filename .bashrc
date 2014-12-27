@@ -81,9 +81,6 @@ which hub > /dev/null && alias git="hub"
 alias bi="bundle install"
 alias be="bundle exec"
 
-# Fix colors in tmux
-alias tmux="env TERM=xterm-256color tmux"
-
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   # Automatically switch to a virtualenv if it is installed
   # and the directory contains a .venv file.
