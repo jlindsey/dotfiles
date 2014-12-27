@@ -4,6 +4,7 @@
   excludesfile = ~/.gitignore_global
   whitespace = -blank-at-eof,tabwidth=2
   pager = less -S
+  autocrlf = false
 [init]
   templatedir = ~/.git_template
 [user]
