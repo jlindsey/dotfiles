@@ -1,48 +1,42 @@
-"" Plugins
-Plugin 'gmarik/Vundle.vim' " Required
-
 " The pope's blessings
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-vinegar'
-Plugin 'tpope/vim-leiningen'
-Plugin 'tpope/vim-projectionist'
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-classpath'
-Plugin 'tpope/vim-eunuch'
-Plugin 'tpope/vim-endwise'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-leiningen', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'tpope/vim-classpath', { 'for': 'clojure' }
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-endwise'
 " Shougo's gifts
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'Shougo/vimshell.vim'
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/neomru.vim'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
+Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/vimshell.vim'
+Plug 'Shougo/unite.vim'
 " Unite plugins
-Plugin 'kannokanno/unite-todo'
-Plugin 'tsukkee/unite-tag'
+Plug 'kannokanno/unite-todo'
+Plug 'tsukkee/unite-tag'
 " Everything else
-Plugin 'chriskempson/base16-vim'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'bling/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'haya14busa/vim-easymotion'
-Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-clojure-highlight'
-Plugin 'Glench/Vim-Jinja2-Syntax'
-Plugin 'vim-scripts/dbext.vim'
-Plugin 'junegunn/vim-pseudocl'
-Plugin 'junegunn/vim-oblique'
-Plugin 'moll/vim-node'
-Plugin 'shime/vim-livedown'
-Plugin 'othree/xml.vim'
-Plugin 'mhinz/vim-startify'
-Plugin 'sjl/gundo.vim'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+Plug 'chriskempson/base16-vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'bling/vim-airline'
+Plug 'airblade/vim-gitgutter'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'scrooloose/syntastic'
+Plug 'haya14busa/vim-easymotion'
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
+Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
+Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'vim-scripts/dbext.vim'
+Plug 'junegunn/vim-pseudocl'
+Plug 'junegunn/vim-oblique'
+Plug 'moll/vim-node'
+Plug 'shime/vim-livedown', { 'for': 'markdown' }
+Plug 'othree/xml.vim', { 'for': 'xml' }
+Plug 'mhinz/vim-startify'
+Plug 'sjl/gundo.vim'
 

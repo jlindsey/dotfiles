@@ -3,12 +3,10 @@ set nocp
 scriptencoding utf-8
 set encoding=utf-8
 
-"" Vundle
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"" vim-plug
+call plug#begin('~/.vim/bundle')
 source $HOME/.vim/packages.vim
-call vundle#end()
+call plug#end()
 
 " Let's go
 filetype plugin indent on

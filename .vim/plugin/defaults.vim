@@ -79,8 +79,10 @@ nmap <leader>q :bp <bar> bd #<cr>
 nmap <leader>bl :ls<cr>
 
 " Password management
-set cryptmethod=blowfish
-au BufReadPost * if &key != "" | set noswapfile nowritebackup viminfo= nobackup noshelltemp history=0 secure | endif
+if !has('nvim')
+  set cryptmethod=blowfish
+  au BufReadPost * if &key != "" | set noswapfile nowritebackup viminfo= nobackup noshelltemp history=0 secure | endif
+endif
 
 " reload current vimrc
 nmap <leader>R :so $MYVIMRC<cr>
