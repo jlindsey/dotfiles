@@ -82,7 +82,14 @@ alias bi="bundle install"
 alias be="bundle exec"
 
 # nvim
-alias vim="which nvim > /dev/null && nvim || vim"
+vim_wrapper() {
+  if hash nvim 2>/dev/null; then
+    nvim "$@"
+  else
+    vim "$@"
+  fi
+}
+alias vim="vim_wrapper"
 
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   # Automatically switch to a virtualenv if it is installed
