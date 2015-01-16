@@ -9,6 +9,7 @@
     ".vim",
     ".vimrc",
     ".gvimrc",
+    ".pryrc",
     ".tmux.conf"
   ],
 
