@@ -33,6 +33,7 @@ fi
 # Misc os-specific
 if [ $IS_OS_X ]; then
   export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
+  $(boot2docker shellinit 2> /dev/null)
 fi
 #}}}
 
