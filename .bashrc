@@ -89,6 +89,10 @@ alias ls="ls -F --group-directories-first --color=auto"
 alias ll="ls -lh"
 alias la="ll -A"
 
+# Vimisms
+alias :q="exit"
+alias :e="vim"
+
 # Git
 which hub > /dev/null && alias git="hub"
 
