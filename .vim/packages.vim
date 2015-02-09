@@ -20,6 +20,7 @@ Plug 'sgur/ctrlp-extensions.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'chriskempson/base16-vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'tejr/vim-nagios'
 Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/rainbow_parentheses.vim'
@@ -33,4 +34,4 @@ Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'othree/xml.vim', { 'for': 'xml' }
 Plug 'mhinz/vim-startify'
 Plug 'gcmt/wildfire.vim'
-
+Plug 'rking/ag.vim'
