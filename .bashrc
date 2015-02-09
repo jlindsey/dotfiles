@@ -35,6 +35,20 @@ if [ $IS_OS_X ]; then
   export ARCHFLAGS="-Wno-error=unused-command-line-argument-hard-error-in-future"
   $(boot2docker shellinit 2> /dev/null)
 fi
+
+# Ensure gpg-agent is started and connected to this session
+if $(which gpg-agent > /dev/null); then
+  if [ -f ~/.gpg-agent ]; then
+    source ~/.gpg-agent
+    export GPG_AGENT_INFO
+  fi
+
+  gpg-agent > /dev/null 2>&1
+  if [[ $? -eq 2 ]]; then
+    killall gpg-agent 2> /dev/null
+    eval $(gpg-agent --daemon --write-env-file ~/.gpg-agent)
+  fi
+fi
 #}}}
 
 #{{{ PS1
