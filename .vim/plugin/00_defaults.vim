@@ -1,3 +1,7 @@
+" Filetype and syntax
+filetype plugin indent on
+syntax on
+
 " remap <leader> to ,
 let mapleader = ","
 

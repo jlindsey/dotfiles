@@ -8,7 +8,3 @@ call plug#begin('~/.vim/bundle')
 source $HOME/.vim/packages.vim
 call plug#end()
 
-" Let's go
-filetype plugin indent on
-syntax on
-
