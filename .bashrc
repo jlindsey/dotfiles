@@ -108,7 +108,7 @@ vim_wrapper() {
     vim "$@"
   fi
 }
-alias vim="vim_wrapper"
+#alias vim="vim_wrapper"
 
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   # Automatically switch to a virtualenv if it is installed
