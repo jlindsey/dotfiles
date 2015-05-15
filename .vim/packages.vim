@@ -12,13 +12,15 @@ Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-endwise'
 " Everything else
+Plug 'vim-ruby/vim-ruby'
 Plug 'jeetsukumaran/vim-filebeagle'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'kien/ctrlp.vim'
 Plug 'sgur/ctrlp-extensions.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'chriskempson/base16-vim'
+Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'sheerun/vim-polyglot'
 Plug 'tejr/vim-nagios'
 Plug 'bling/vim-airline'
@@ -29,9 +31,14 @@ Plug 'haya14busa/vim-easymotion'
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
 Plug 'Glench/Vim-Jinja2-Syntax'
-Plug 'moll/vim-node', { 'for': 'javascript' }
-Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'othree/xml.vim', { 'for': 'xml' }
 Plug 'mhinz/vim-startify'
-Plug 'gcmt/wildfire.vim'
 Plug 'rking/ag.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'mattn/webapi-vim' " required for gist.vim
+Plug 'mattn/gist-vim'
+Plug 'sunaku/vim-ruby-minitest'
+Plug 'dag/vim-fish'
+Plug 'fatih/vim-go'
+Plug 'majutsushi/tagbar'
+
