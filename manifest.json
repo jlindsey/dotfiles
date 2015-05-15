@@ -3,6 +3,7 @@
     ".bash_profile",
     ".bashrc",
     ".bashrc.d",
+    ".zshrc",
     ".gitconfig",
     ".gitignore_global",
     ".git_template",
