@@ -1,6 +1,6 @@
 function! RangerChooser()
     let temp = tempname()
-    exec 'silent !ranger --choosefiles=' . shellescape(temp)
+    exec 'silent !ranger --choosefiles=' . shellescape(temp) . ' ' . expand('%:h')
     if !filereadable(temp)
         redraw!
         " Nothing to read.

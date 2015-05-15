@@ -19,7 +19,7 @@ set modeline " Allow modelines
 set modelines=5
 set autoread
 set autowrite
-set grepprg=ack
+set grepprg=ag
 
 " Color
 set background=dark
@@ -57,16 +57,18 @@ nno <C-h> <C-w>h
 nno <C-j> <C-w>j
 nno <C-k> <C-w>k
 nno <C-l> <C-w>l
-nno <up> <nop>
-nno <down> <nop>
-nno <left> <nop>
+nno <up>    <nop>
+nno <down>  <nop>
+nno <left>  <nop>
 nno <right> <nop>
-vno <up> <nop>
-vno <down> <nop>
-vno <left> <nop>
+vno <up>    <nop>
+vno <down>  <nop>
+vno <left>  <nop>
 vno <right> <nop>
-nno j gj
-nno k gk
+nno <silent> j gj
+nno <silent> k gk
+xnoremap < <gv
+xnoremap > >gv
 " working with buffers
 set hidden
 " ,t Open a new empty buffer
@@ -96,4 +98,15 @@ vno <C-c> "+y
 
 " Command Abbreviations
 ca !! VimProcBang
+
+" Neovim terminal mode
+if has('nvim')
+  let g:terminal_scrollback_buffer_size = 10000
+
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-h> <C-\><C-n><C-w>h
+  tnoremap <C-j> <C-\><C-n><C-w>j
+  tnoremap <C-k> <C-\><C-n><C-w>k
+  tnoremap <C-l> <C-\><C-n><C-w>l
+endif
 
