@@ -49,7 +49,7 @@ plugins=(git ruby rails osx bundler common-aliases gem tmux vi-mode)
 
 # User configuration
 
-export PATH="$HOME/.rbenv/bin:$HOME/.go/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.rbenv/bin:$HOME/.go/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 eval "$(rbenv init -)"
 
 export NVM_DIR=~/.nvm
