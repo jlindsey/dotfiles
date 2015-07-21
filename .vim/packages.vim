@@ -1,7 +1,8 @@
 " Core
-Plug 'chriskempson/base16-vim'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'sheerun/vim-polyglot'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-sensible'
@@ -38,10 +39,14 @@ Plug 'slim-template/vim-slim', { 'for': 'slim' }
 Plug 'tejr/vim-nagios', { 'for': 'nagios' }
 Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
 Plug 'guns/vim-clojure-highlight', { 'for': 'clojure' }
-Plug 'Glench/Vim-Jinja2-Syntax', { 'for': ['jinja', 'jinja2'] }
+Plug 'Glench/Vim-Jinja2-Syntax', { 'for': ['jinja', 'jinja2', 'sls'] }
 Plug 'othree/xml.vim', { 'for': 'xml' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'tpope/vim-leiningen', { 'for': 'clojure' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-classpath', { 'for': ['clojure', 'java'] }
+Plug 'raichoo/haskell-vim', { 'for': 'haskell' }
+Plug 'beyondmarc/glsl.vim', { 'for': 'glsl330' }
+Plug 'shime/vim-livedown', { 'for': 'markdown' }
+Plug 'saltstack/salt-vim', { 'for': 'sls' }
 

@@ -23,7 +23,8 @@ set grepprg=ag
 
 " Color
 set background=dark
-colorscheme base16-monokai
+set t_Co=256
+colorscheme PaperColor
 
 " show hidden characters
 set list

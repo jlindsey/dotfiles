@@ -1,4 +1,4 @@
-let g:airline_theme = 'base16'
+let g:airline_theme='PaperColor'
 let g:airline_powerline_fonts = 1
 
 let g:airline#extensions#syntastic#enabled = 1
