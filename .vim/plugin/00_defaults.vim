@@ -85,6 +85,8 @@ nmap <leader>q :bp <bar> bd #<cr>
 " Show all open buffers
 nmap <leader>bl :ls<cr>
 
+imap jj <esc>
+
 " Password management
 if !has('nvim')
   set cryptmethod=blowfish
