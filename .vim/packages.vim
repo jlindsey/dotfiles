@@ -19,11 +19,11 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-endwise'
 
 " UI
-Plug 'kien/rainbow_parentheses.vim'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'sgur/ctrlp-extensions.vim'
 Plug 'tacahiroy/ctrlp-funky'
 Plug 'jeetsukumaran/vim-filebeagle'
