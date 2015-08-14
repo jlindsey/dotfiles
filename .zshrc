@@ -56,6 +56,7 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 eval "$(direnv hook zsh)"
+eval "$(thefuck --alias)"
 
 boot2docker status | grep -q running && $(boot2docker shellinit 2> /dev/null)
 

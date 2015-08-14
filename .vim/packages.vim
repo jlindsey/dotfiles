@@ -17,6 +17,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-endwise'
+Plug 'vim-scripts/dbext.vim'
 
 " UI
 Plug 'junegunn/rainbow_parentheses.vim'
@@ -30,6 +31,7 @@ Plug 'jeetsukumaran/vim-filebeagle'
 Plug 'airblade/vim-gitgutter'
 Plug 'haya14busa/vim-easymotion'
 Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
 
 " Language-specific
 Plug 'tpope/vim-rails', { 'for': 'ruby' }
@@ -49,4 +51,5 @@ Plug 'raichoo/haskell-vim', { 'for': 'haskell' }
 Plug 'beyondmarc/glsl.vim', { 'for': 'glsl330' }
 Plug 'shime/vim-livedown', { 'for': 'markdown' }
 Plug 'saltstack/salt-vim', { 'for': 'sls' }
+Plug 'exu/pgsql.vim'
 

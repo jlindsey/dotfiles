@@ -1,3 +1,3 @@
-set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guifont=Sauce\ Code\ Powerline\ Plus\ Nerd\ File\ Types\ Plus\ Pomicons:h14
 set guioptions-=rL
 
